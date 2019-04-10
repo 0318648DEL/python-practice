@@ -1,8 +1,3 @@
-def decimalToBinary(value):
-    if value==0:
-        return ""
-    return decimalToBinary(value//2)+str(value%2)
-
 def decimalToHex(value):
     if value==0:
         return ""
@@ -23,4 +18,5 @@ def decimalToHex(value):
         s=str(r)
     return decimalToHex(value//16)+s
 
-print(decimalToHex(28))
+inp=eval(input("10진수를 입력해주세요 : "))
+print("{0}의 16진수는 {1}입니다".format(inp,decimalToHex(inp)))

@@ -13,3 +13,7 @@ for i in range(1000000):
             number[2]+=1
         else:
             number[1]+=1
+
+for f in range(0,4):
+    if not (f+1)%2==0:
+        print("{0} 번째 영역엔 {1}만큼 꽂혔다.".format(f+1,number[f]))
