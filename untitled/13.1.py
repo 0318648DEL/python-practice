@@ -1,0 +1,8 @@
+filename=input("파일 이름을 입력하세요 : ")
+f=open(filename)
+erase=input("제거할 단어를 입력하세요 : ")
+content=f.read()
+new=content.replace(erase,"")
+f.close()
+f=open(filename,"w")
+f.write(new)

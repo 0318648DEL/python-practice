@@ -1,3 +1,4 @@
+
 def decimalToBinary(value):
     if value==0:
         return ""
